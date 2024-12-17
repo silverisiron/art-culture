@@ -48,7 +48,6 @@ main #slideshow{
   border-bottom: 1px solid black;
 }
 main #slideshow .slide-wrapper{
-  
   width: calc(100%*3);
   height: 100%;
   display: flex;
@@ -115,19 +114,20 @@ main ul li a{
   justify-content: center;
 }
 main #modal-container{
+  display: none;
   z-index: 300;
   position: absolute;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(5px);
   background-color: #07070757;
-  text-align: center;
   justify-content: center;
   opacity: 0;
   transition: all .2s;
 }
 main #modal-container.show{
   opacity: 1;
+  display: flex;
 }
 main #modal-container .modal{
   position: relative;
